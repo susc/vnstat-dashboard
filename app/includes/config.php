@@ -22,7 +22,7 @@
 error_reporting(E_ALL);*/
 
 // Set the default system Timezone
-date_default_timezone_set('Europe/London');
+date_default_timezone_set('Asia/Shanghai');
 
 // Path of vnstat
 $vnstat_bin_dir = '/usr/bin/vnstat';

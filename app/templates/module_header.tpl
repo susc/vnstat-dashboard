@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Network Traffic</title>
+    <title>网络流量</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -16,11 +16,11 @@
 <body>
     <nav class="navbar sticky-top navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">Network Traffic ({$current_interface})</a>
+            <a class="navbar-brand" href="#">网络流量 ({$current_interface})</a>
 
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Interface Selection
+                    选择接口
                 </button>
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">

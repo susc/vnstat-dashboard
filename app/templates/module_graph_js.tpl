@@ -10,10 +10,10 @@
         {
             var data = new google.visualization.DataTable();
 
-            data.addColumn('date', 'Hour');
-            data.addColumn('number', 'Traffic In');
-            data.addColumn('number', 'Traffic Out');
-            data.addColumn('number', 'Total Traffic');
+            data.addColumn('date', '小时');
+            data.addColumn('number', '入站流量');
+            data.addColumn('number', '出站流量');
+            data.addColumn('number', '总流量');
 
             data.addRows([
 {foreach from=$hourlyGraphData key=key item=value}
@@ -22,7 +22,7 @@
             ]);
 
             let options = {
-                title: 'Hourly Network Traffic',
+                title: '每小时网络流量',
                 orientation: 'horizontal',
                 legend: { position: 'right' },
                 explorer: { 
@@ -62,10 +62,10 @@
         {
             var data = new google.visualization.DataTable();
 
-            data.addColumn('date', 'Day');
-            data.addColumn('number', 'Traffic In');
-            data.addColumn('number', 'Traffic Out');
-            data.addColumn('number', 'Total Traffic');
+            data.addColumn('date', '日');
+            data.addColumn('number', '入站流量');
+            data.addColumn('number', '出站流量');
+            data.addColumn('number', '总流量');
 
             data.addRows([
 {foreach from=$dailyGraphData key=key item=value}
@@ -74,7 +74,7 @@
             ]);
             
             let options = {
-                title: 'Daily Network Traffic',
+                title: '每日网络流量',
                 orientation: 'horizontal',
                 legend: { position: 'right' },
                 explorer: { 
@@ -109,10 +109,10 @@
         {
             var data = new google.visualization.DataTable();
 
-            data.addColumn('date', 'Month');
-            data.addColumn('number', 'Traffic In');
-            data.addColumn('number', 'Traffic Out');
-            data.addColumn('number', 'Total Traffic');
+            data.addColumn('date', '月');
+            data.addColumn('number', '入站流量');
+            data.addColumn('number', '出站流量');
+            data.addColumn('number', '总流量');
 
             data.addRows([
 {foreach from=$monthlyGraphData key=key item=value}
@@ -121,7 +121,7 @@
             ]);
 
             let options = {
-                title: 'Monthly Network Traffic',
+                title: '每月网络流量',
                 orientation: 'horizontal',
                 legend: { position: 'right' },
                 explorer: { 
