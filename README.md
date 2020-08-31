@@ -1,46 +1,33 @@
-# What is vnstat-dashboard?
-This dashboard is an adaptation of vnstat-php-frontend by bjd using Bootstrap written in PHP. It provides the following:
+# 简介
+此面板主要提供以下功能
 
-* Hourly Statistics Chart (using Google Charts)
-* Daily & Monthly Statistics Overview
-* Top 10 Day Statistics
-* Automatically populated interface selection
+* 每小时统计图表（使用 Google Charts）
+* 每日/每月统计总览
+* 流量最高的10天统计
+* 自动填充的界面选择
 
-## Run it with Docker
+## 界面预览
+![主界面](https://raw.githubusercontent.com/susc/vnstat-dashboard/master/docs/screenshots/main.png)
 
-### How to build it
-``$ docker build . -t amarston/vnstat-dashboard:latest``
+## 使用Docker部署
 
-### How to publish it
-``$ docker push amarston/vnstat-dashboard:latest``
+### 构建镜像
+``$ docker build . -t susc/vnstat-dashboard:latest``
 
-### How to start it
-``$ docker run --name vnstat-dashboard -p 80:80 -v /usr/bin/vnstat:/usr/bin/vnstat -v /var/lib/vnstat:/var/lib/vnstat -d amarston/vnstat-dashboard:latest``
+### 发布镜像
+``$ docker push susc/vnstat-dashboard:latest``
 
-### How to stop it
+### 启动容器
+``$ docker run --name vnstat-dashboard -p 80:80 -v /usr/bin/vnstat:/usr/bin/vnstat -v /var/lib/vnstat:/var/lib/vnstat -d susc/vnstat-dashboard:latest``
+
+### 停止容器
 ``$ docker stop vnstat-dashboard``
 
-## Run it with Locally
+## 本地部署
 
-### How to run it
+### 运行方式
 ```
 $ cp -rp app/ /var/www/html/vnstat/
 $ cd /var/www/html/vnstat/
 $ composer install
 ```
-
-## Licensing
-Copyright (C) 2019 Alexander Marston (alexander.marston@gmail.com)
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
